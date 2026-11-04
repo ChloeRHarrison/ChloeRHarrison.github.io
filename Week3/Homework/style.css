@@ -1,0 +1,153 @@
+* {
+    /* CSS HEX */
+--teal-blue: #112d33;
+--thistle: #bdb7d2ff;
+--old-rose: rgb(188, 143, 158);
+--terracotta-clay: #a5635fff;
+--clay-soil: #7f4a39ff;
+color: white
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Laila:wght@400&display=swap');
+
+body {
+    background-color: var(--teal-blue);
+    font-family: 'caveat';
+    font-size: 24px;
+    text-align: center;
+        padding-left: 60px;
+        padding-right: 60px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        margin-top: 30px;
+        margin-bottom: 90px;
+        margin-left: 60px;
+        margin-right: 60px;
+}
+
+h1 {
+    background-color: var(--old-rose);
+    color: var(--thistle);
+    border: 2px, solid, var(--thistle);
+    border-radius: 6px;
+        font-family: 'caveat';
+        font-size: 60px;
+        text-align: center;
+    padding-bottom: 16px;
+    padding-top: 16px;
+}
+
+h2 {
+    background-color: var(--terracotta-clay);
+    color: var(--thistle);
+    border: 1px, solid, var(--thistle);
+    border-radius: 4px;
+        text-align: center;
+        font-size: 32px;
+        font-family: 'caveat';
+    width: 25%;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h3 {
+    background-color: var(--clay-soil);
+    color: var(--thistle);
+    border: 1px, solid, var(--thistle);
+    border-radius: 3px;
+        text-align: center;
+        font-size: 24px;
+        font-family: 'caveat';
+    width: 10%;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.define div > h2 {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card div{
+    padding-top: 36px;
+    padding-bottom: 36px;
+    padding-left: 36px;
+    padding-right: 36px;
+        border: 2px, solid, var(--thistle);
+        border-radius: 12px;
+        background-color: var(--old-rose);
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 24px;
+
+    transition: all 1s;
+}
+
+.card div:hover{
+    background-color: var(--thistle);
+    color: var(--old-rose);
+}
+
+.card div:hover > h2 {
+    background-color: var(--old-rose);
+    color: var(--thistle);
+}
+
+.card div > h2 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    background-color: var(--thistle);
+    color: var(--old-rose);
+
+    transition: all 1s;
+}
+
+.dosanddonts div {
+    text-align: center;
+}
+
+.dosanddonts div > ul > h3 {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.dos div > ul {
+    list-style-position: inside;
+    list-style-image: url(./commimgs/dos.svg);
+}
+
+.donts div > ul {
+    list-style-position: inside;
+    list-style-image: url(./commimgs/donts.svg);
+}
+
+.imageexamples div > img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    height: 500px;
+    object-fit: cover;
+    background-color: var(--thistle);
+    box-shadow: 4px 4px var(--old-rose);
+    transition: 500ms;
+}
+
+.imageexamples div > img:hover {
+    background-color: var(--old-rose);
+    box-shadow: 4px 4px var(--thistle)
+}
+
+.socials {
+    text-align: center;
+    color: var(--thistle);
+    padding-bottom: 16px;
+    padding-top: 60px;
+}
+

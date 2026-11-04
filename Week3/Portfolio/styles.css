@@ -65,6 +65,8 @@ h2{
     text-shadow: 2px 3px 0px rgb(128,94,115);
 }
 
+/*TRANSITIONS OVERVIEW: https: //www.w3schools.com/css/css3_transitions_timing.asp*/
+
 .cards div {
     background-color: var(--cardColor);
     padding: 16px;

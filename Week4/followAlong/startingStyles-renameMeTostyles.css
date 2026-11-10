@@ -1,0 +1,125 @@
+/*
+    font-family: "IBM Plex Mono", monospace;
+  font-family: "News Cycle",
+  sans-serif;
+
+*/
+
+* {
+    --primaryWhite: white;
+    --primaryBlack: black;
+    --emphasisRed: #C20000;
+    --size: 12px;
+    font-family: "IBM Plex Mono", monospace;
+    background-color: black;
+}
+
+
+
+.topNav {
+position: fixed; 
+  background-color: black;
+  color: white;
+  display: flex; 
+  justify-content: center;
+  padding: 24px; 
+  width: 100vw; 
+  height: 100px;
+}
+
+.topNav > ul  {
+  display: flex;
+  list-style: none;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.topNav > ul> li:hover {
+  background-color: red;
+}
+
+.topNav > img {
+  height: 75px;
+  width: 75px;
+  object-fit: cover;
+  padding-left: 150px;
+}
+
+.bottomNav {
+  background-color: black;
+  color: white;
+  width: 100%vw;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 100%;
+  gap: 20px;
+  justify-content: space-evenly;
+  align-items: top;
+  font-size: 1.5rem;
+}
+
+
+
+.hero {
+  background-image: url(./assets/thehiss.webp);
+  height: 100vh; 
+  width: 100vw; 
+  background-size: cover;
+  padding-top: 200px;
+  padding-left: 20px;
+  font-size: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+
+.hero > header {
+  font-size: 4rem;
+  background-color: transparent;
+}
+
+.message {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  justify-content: center;
+}
+
+.message > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.director {
+  display: grid;
+  grid-template-columns: 40% 50%;
+  justify-content: center;
+}
+
+.director > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.dashboard {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 50% 50%;
+  padding-bottom: 60px;
+  gap: 10px 10px;
+  padding-top: 40px;
+  justify-content: center;
+}
+
+.dashboard > div {
+  background-color: white;
+  color: black;
+  padding: 12px; 
+}
+
+.dashboard > div > h2 {
+  color: var(--emphasisRed);
+  background-color: white;
+}

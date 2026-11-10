@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy:wght@400;600;700&family=Rethink+Sans:wght@400&display=swap');
+
+* {
+    --wine-plum: #773344ff;
+    --almond-silk: #e3b5a4ff;
+    --linen: #f5e9e2ff;
+    --coffee-bean: #0b0014ff;
+    --lobster-pink: #d44d5cff;
+    font-size: 1rem;
+    color: var(--linen);
+    font-family: 'Rethink Sans';
+}
+
+@media only screen and (max-width: 720px) {
+    body {
+        font-size: 2rem;
+    }
+
+    .grid{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
+
+.navBar {
+    width: 100vp;
+    background-color: var(--almond-silk);
+    color: var(--linen);
+    border: 3px solid var(--linen);
+    border-radius: 6px;
+    height: auto;
+    padding: 10px;
+    justify-content: center;
+}
+
+.navBar > ul {
+    justify-content: center;
+}
+
+.navBar > ul > li {
+    display: inline-flex;
+    list-style: none;
+    justify-content: center;
+}
+
+.Cards > div > div > img {
+    margin-top: 50px;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.Cards {
+    display: inline-grid;
+    width: 100vw;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.Cards > div > h2 {
+    text-align: center;
+}
+
+.Cards > div > ul {
+    list-style: none;
+}
+
+.Extra {
+    width: 100vp;
+}
+
+.Extra > h2 {
+    background-color: var(--almond-silk);
+    color: var(--linen);
+    border: 3px solid var(--linen);
+    padding: 10px;
+    border-radius: 6px;
+    width: 100vp;
+}
+
+.Extra > div > img {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    padding: 12px;
+}

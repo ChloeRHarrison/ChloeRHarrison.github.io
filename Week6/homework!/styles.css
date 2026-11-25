@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Outfit:wght@400&display=swap');
+
+* {
+--almond-silk: rgb(252, 235, 226);
+--dusty-rose: rgb(201, 150, 154);
+--magenta-bloom: rgb(84, 48, 59);
+--dusty-mauve: rgb(117, 64, 98);
+--slate-grey: rgb(30, 42, 56);
+
+
+font-family: 'Lora';
+font-size: 16px;
+color: var(--almond-silk)
+}
+
+body {
+    font-family: 'Outfit';
+    background-color: var(--slate-grey);
+}
+
+h1 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+h2 {
+     font-size: 2rem;
+    text-align: center;
+    font-family: 'Outfit'
+}
+
+ul {
+    text-align: center;
+    list-style: none;  
+    display: inline;
+}
+
+button {
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 10rem;
+    background-color: var(--dusty-rose);
+    border: 3px solid var(--magenta-bloom);
+    font-family: 'Outfit'; 
+}
+
+button:hover {
+    background-color: var(--magenta-bloom);
+    color: white;
+}
+
+button > a {
+    background-color: var(--dusty-rose);
+}
+
+button > a:hover {
+    background-color: var(--magenta-bloom);
+    color: white;
+}
+
+nav {
+    background-color: var(--magenta-bloom);
+    position: fixed;
+    padding: 12px;
+    top: 0px;
+    left: -625px;
+    width: 600px;
+    height: 100vh;
+    transition: left 1s ease-in;
+}
+
+nav > div > ul > li {
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+nav ul {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.modal {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: var(--magenta-bloom);
+    min-height: 50vh;
+    min-width: 50vw;
+    z-index: 5;
+    display: none; 
+}
+
+.modal > div > ul > li {
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+#open {
+    background-color: var(--magenta-bloom);
+    display: none;
+}
